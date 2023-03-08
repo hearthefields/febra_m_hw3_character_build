@@ -67,6 +67,7 @@ header {
     position: relative;
     color: white;
     padding: 12px 8px;
+    text-align: center !important;
 }
 
 .characters li a { text-decoration: none; }
@@ -75,7 +76,7 @@ header {
 .red_bumper {
     width: 100%;
     height: 6px;
-    background-color: red;
+    background-color: #4D0B0D;
 }
 
 .sprite {
@@ -186,12 +187,9 @@ article p {
 /* footer rules */
 footer {
     color: white;
-    padding: 20px 0 20px 0;
     text-align: center;
-}
-
-.sticky_footer {
-    background-color: rgb(40, 37, 37);
+    padding-top: 25px;
+    background-color: #4D0B0D;
     height: 80px;
 }
 
@@ -206,40 +204,40 @@ footer {
     height: 100vh; /* vw = viewport height => screen height */
     z-index: 2;
 
-    background-image: url('../img/Cap_LB_Bg.png');
+    background-image: url('../img/josh_screen.png');
     background-repeat: no-repeat;
-    background-size: 55vh;
-    background-position: 40px bottom;
+    background-size: 69vh;
+    background-position: left;
 
     display: none; /* rule stating it does not display upon loading */
 }
 
 #lightbox2 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/ashley_screen.png')
 }
 
 #lightbox3 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/jess_screen.png')
 }
 
 #lightbox4 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/emily_screen.png')
 }
 
 #lightbox5 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/mike_screen.png')
 }
 
 #lightbox6 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/sam_screen.png')
 }
 
 #lightbox7 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/chris_screen.png')
 }
 
 #lightbox8 { 
-    background-image: url('../img/Thor_LB_Bg.png')
+    background-image: url('../img/matt_screen.png')
 }
 
 .lightbox_close {

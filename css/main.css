@@ -1,278 +1,304 @@
-@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
 
 * {
-    border: none;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
-html, body { 
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    font-family: 'Asul', sans-serif;
-    background-color: black;
-    color: white;
+  font-family: "Asul", sans-serif;
+  background-color: black;
+  color: white;
 }
 
-/* main header rules */ 
-header { 
-    background-color: #21454C;
-    text-align: center;
-    top: 0;
-    border-bottom: 30px solid black;
-    background-image: url(../img/tom-barrett.jpg);
-    background-size: cover;          
-    background-repeat: no-repeat;
-    background-position: center center;   
-    opacity: 0.8;      
+/* main header rules */
+header {
+  background-color: #21454c;
+  text-align: center;
+  top: 0;
+  border-bottom: 30px solid black;
+  background-image: url(../img/tom-barrett.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8;
 }
 
 #until-dawn-logo {
-    width: 1600px;
-    margin: 20px;
+  width: 1600px;
+  margin: 20px;
 }
 
 /* main rules here */
 
 #character_nav {
-    text-align: center;
-    background-color: #21454C;
-    background-image: url('../img/jaime-jasso-until-dawn-by-jjasso.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-position: center center;   
-
+  text-align: center;
+  background-color: #21454c;
+  background-image: url("../img/jaime-jasso-until-dawn-by-jjasso.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
 }
 
-.characters { 
-    list-style-type: none; 
+.characters {
+  list-style-type: none;
 }
 
 .characters li {
-    position: relative;
-    display: inline-block;
-    margin: 10px 8px;
-    background-color: black;
-    text-align: left;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin: 10px 8px;
+  background-color: black;
+  text-align: left;
+  cursor: pointer;
 }
 
 .characters li h5 {
-    position: relative;
-    color: white;
-    padding: 12px 8px;
-    text-align: center !important;
+  position: relative;
+  color: white;
+  padding: 12px 8px;
+  text-align: center !important;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 
 .characters li h5:hover {
-    color: #4D0B0D;
+  color: #4d0b0d;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.characters li a { 
-    text-decoration: none; 
+.characters li a {
+  text-decoration: none;
 }
-
 
 .red_bumper {
-    width: 100%;
-    height: 6px;
-    background-color: #4D0B0D;
+  width: 100%;
+  height: 6px;
+  background-color: #4d0b0d;
 }
-
 
 .sprite {
-    width: 300px;
-    height: 518px;
-    background-image: url('../img/until-dawn-first-sprite.jpg');
-    background-color: black;
-    margin-bottom: 10px;
+  width: 300px;
+  height: 518px;
+  background-image: url("../img/until-dawn-first-sprite.jpg");
+  background-color: black;
+  margin-bottom: 10px;
 }
 
-#ashley { 
-    background-position: -300px 0;
+#ashley {
+  background-position: -300px 0;
 }
 
-#jessica { 
-    background-position: -600px 0;
+#jessica {
+  background-position: -600px 0;
 }
 
-#emily { 
-    background-position: -900px 0;
+#emily {
+  background-position: -900px 0;
 }
 
 .sprite:hover {
-    background-position-y: -518px !important;
+  background-position-y: -518px !important;
 }
 
 .select {
-    position: absolute;
-    display: inline-block;
-    width: 300px;
-    text-align: center;
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
 }
 
 .select img {
-    border-radius: 50%;
-    height: 150px;
-    display: inline-block;
-    margin-top: 150px;
-    border: 10px solid black;
-    outline: 3px dashed #4D0B0D;
-    outline-offset: 10px;}
-
+  border-radius: 50%;
+  height: 150px;
+  display: inline-block;
+  margin-top: 150px;
+  border: 10px solid black;
+  outline: 3px dashed #4d0b0d;
+  outline-offset: 10px;
+}
 
 .select img:hover {
-    height: 150px;
-    padding: 20px;
-    background-color: #012c38;
-    display: inline-block;
-    content: url('../img/butterfly_cause.png');
-    border: 10px dashed #4D0B0D;
-    opacity: 0.8;    
+  height: 150px;
+  padding: 20px;
+  background-color: #012c38;
+  display: inline-block;
+  content: url("../img/butterfly_cause.png");
+  border: 10px dashed #4d0b0d;
+  opacity: 0.8;
 }
 
 .sprite2 {
-    width: 300px;
-    height: 518px;
-    background-image: url('../img/until-dawn-second-sprite.jpg');
-    background-color: black;
-    margin-bottom: 10px;
+  width: 300px;
+  height: 518px;
+  background-image: url("../img/until-dawn-second-sprite.jpg");
+  background-color: black;
+  margin-bottom: 10px;
 }
 
-#sam { 
-    background-position: -300px 0;
+#sam {
+  background-position: -300px 0;
 }
 
-#chris { 
-    background-position: -600px 0;
+#chris {
+  background-position: -600px 0;
 }
 
-#matt { 
-    background-position: -900px 0;
+#matt {
+  background-position: -900px 0;
 }
 
 .sprite2:hover {
-    background-position-y: -518px !important;
-
+  background-position-y: -518px !important;
 }
-
 
 article {
-    padding: 50px;
-    background-image: url(../img/special_edition.jpeg);
-    background-size: cover;          
-    background-repeat: no-repeat;
-    background-position: center center;   
-    background-color: #21454C;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    border-top: 30px solid black;
-    border-bottom: 30px solid black;
+  padding: 50px;
+  background-image: url(../img/special_edition.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #21454c;
+  background-blend-mode: multiply;
+  opacity: 0.8;
+  border-top: 30px solid black;
+  border-bottom: 30px solid black;
+  line-height: 250%;
 }
 
-article h3 { 
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 14px;
+article h3 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+span {
+  color: #4d0b0d;
+  background-color: #eee;
+  font-size: 20px;
+  padding: 1px;
+}
+
+article h4 {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 20px;
 }
 
 article p {
-    width: 80%;
-    font-size: 18px;
-    line-height: 1.2;
-    text-align: center;
-    margin: 0 auto;
+  width: 80%;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* footer rules */
 footer {
-    color: white;
-    text-align: center;
-    padding-top: 25px;
-    background-color: #4D0B0D;
-    height: 80px;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  background-color: #4d0b0d;
+  height: 80px;
+  background-image: url(../img/noise_blanks.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.7;
 }
 
 /* lightbox rules here */
 
 .lightbox {
-    background-color: rgba(0,0,0,0.85);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* vw = viewport width => screen width */
-    height: 100%; /* vw = viewport height => screen height */
-    overflow-y: scroll;
-    z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* vw = viewport width => screen width */
+  height: 100%; /* vw = viewport height => screen height */
+  overflow-y: scroll;
+  z-index: 2;
 
-    background-image: url('../img/josh_screen.png');
-    background-repeat: no-repeat;
-    background-size: 69vh;
-    background-position: left;
+  background-image: url("../img/josh_screen.png");
+  background-repeat: no-repeat;
+  background-size: 69vh;
+  background-position: left;
 
-    display: none; /* rule stating it does not display upon loading */
+  display: none; /* rule stating it does not display upon loading */
 }
 
-#lightbox2 { 
-    background-image: url('../img/ashley_screen.png')
+#lightbox2 {
+  background-image: url("../img/ashley_screen.png");
 }
 
-#lightbox3 { 
-    background-image: url('../img/jess_screen.png')
+#lightbox3 {
+  background-image: url("../img/jess_screen.png");
 }
 
-#lightbox4 { 
-    background-image: url('../img/emily_screen.png')
+#lightbox4 {
+  background-image: url("../img/emily_screen.png");
 }
 
-#lightbox5 { 
-    background-image: url('../img/mike_screen.png')
+#lightbox5 {
+  background-image: url("../img/mike_screen.png");
 }
 
-#lightbox6 { 
-    background-image: url('../img/sam_screen.png')
+#lightbox6 {
+  background-image: url("../img/sam_screen.png");
 }
 
-#lightbox7 { 
-    background-image: url('../img/chris_screen.png')
+#lightbox7 {
+  background-image: url("../img/chris_screen.png");
 }
 
-#lightbox8 { 
-    background-image: url('../img/matt_screen.png')
+#lightbox8 {
+  background-image: url("../img/matt_screen.png");
 }
 
 .lightbox_close {
-    position: relative;
-    top: 20px;
-    left: 95%;
-    color: white;
-    font-size: 3em;
-    text-decoration: none;
-    font-weight: bolder;
+  position: relative;
+  top: 20px;
+  left: 95%;
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .lightbox article {
-    width: 55%;
-    margin-left: 40%;
-    padding-top: 50px;
+  width: 55%;
+  margin-left: 40%;
+  padding-top: 50px;
 }
 
-.lb_text, .lb_heading { 
-    text-align: left; 
+.lb_text,
+.lb_heading {
+  text-align: left;
 }
 
 .lb_text {
-    line-height: 1.6 !important;
-    margin-left: 0;
-    padding-top: 2em;
+  line-height: 1.6 !important;
+  margin-left: 0;
+  padding-top: 2em;
 }
 
-.lightbox:target { 
-    display: block; 
+.lightbox:target {
+  display: block;
 }

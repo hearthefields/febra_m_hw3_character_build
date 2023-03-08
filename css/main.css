@@ -202,11 +202,12 @@ footer {
 
 .lightbox {
     background-color: rgba(0,0,0,0.85);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* vw = viewport width => screen width */
-    height: 100vh; /* vw = viewport height => screen height */
+    width: 100%; /* vw = viewport width => screen width */
+    height: 100%; /* vw = viewport height => screen height */
+    overflow-y: scroll;
     z-index: 2;
 
     background-image: url('../img/josh_screen.png');

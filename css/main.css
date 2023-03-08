@@ -70,7 +70,13 @@ header {
     text-align: center !important;
 }
 
-.characters li a { text-decoration: none; }
+.characters li h5:hover {
+    color: #4D0B0D;
+}
+
+.characters li a { 
+    text-decoration: none; 
+}
 
 
 .red_bumper {
@@ -101,7 +107,6 @@ header {
 
 .sprite:hover {
     background-position-y: -518px !important;
-
 }
 
 .select {
